@@ -1,0 +1,24 @@
+<html>
+    <link rel="stylesheet" href="/static/routing.css">
+    <body>
+        <h1>List of Rules:</h1>
+        <ul>
+        {% for rule in rules %}
+            {% if ids[loop.index-1]==that: %}<li><label style="background-color: red">{{ids[loop.index-1]}}</label></li>{% else: %}<li><label>{{ids[loop.index-1]}}</label></li>{% endif %}
+                <ul>
+                    <li>IP: {{rule['ip']}}</li>
+                    <li>netmaskCIDR: {{rule['netmaskCIDR']}}</li>
+                    <li>GW: {{rule['gw']}}</li>
+                    <li>Device: {{rule['device']}}</li>
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    <div>
+        <h1>SEARCH ROUTE:</h1>
+        <form method="POST">
+            {{form.ip.label}}{{form.ip}}{{form.submit}}
+        </form>
+    </div>
+    </body>
+</html>
