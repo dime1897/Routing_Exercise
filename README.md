@@ -1,2 +1,3 @@
 # ROUTING
-Testo/$\rightarrow$contains exam text and utilities.
+
+* **Testo/** $\rightarrow$contains exam text and utilities.
