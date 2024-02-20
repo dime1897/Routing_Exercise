@@ -1,5 +1,5 @@
 # ROUTING
 
-* **Testo**$\rightarrow$contains exam text and utilities.
-* **static**$\rightarrow$contains .css files.
-* **templates**$\rightarrow$contains .html files.
+* **Testo**: contains exam text and utilities.
+* **static**: contains .css files.
+* **templates**: contains .html files.
